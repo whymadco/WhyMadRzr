@@ -43,7 +43,7 @@ namespace WhyMad.Pages
 
         public void OnPost(JsonWeatherServices jsonWeatherService)
         {
-            weatherModel = jsonWeatherService.GetWeatherModel("istanbul");
+            weatherModel = jsonWeatherService.GetWeatherModel(region);
             wind = weatherModel.currentConditions.wind.km.ToString();
             region = weatherModel.region;
             time = DateTime.Now.Hour.ToString();
