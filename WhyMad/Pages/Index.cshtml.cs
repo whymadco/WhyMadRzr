@@ -5,8 +5,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using WhyMad.Models;
-using WhyMad.Services;
 
 namespace WhyMad.Pages
 {
@@ -38,20 +36,7 @@ namespace WhyMad.Pages
         [BindProperty]
         public string expression { get; set; }
 
-        WeatherModel weatherModel;
-        JsonWeatherServices jsonWeatherService;
-
-        public void OnPost(JsonWeatherServices jsonWeatherService)
-        {
-            weatherModel = jsonWeatherService.GetWeatherModel(region);
-            wind = weatherModel.currentConditions.wind.km.ToString();
-            region = weatherModel.region;
-            time = DateTime.Now.Hour.ToString();
-            humidity = weatherModel.currentConditions.humidity.ToString();
-            iconsrc = weatherModel.currentConditions.iconURL.ToString();
-            celcius = weatherModel.currentConditions.temp.c.ToString();
-            expression = weatherModel.currentConditions.comment.ToString();
-        }
+        
         
 
     }
