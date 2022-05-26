@@ -52,7 +52,7 @@ namespace WhyMad.Pages
             celcius = weatherModel.currentConditions.temp.c.ToString();
             expression = weatherModel.currentConditions.comment.ToString();
         }
-
+        
 
     }
 }

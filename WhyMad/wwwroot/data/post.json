@@ -1,0 +1,16 @@
+[
+  {
+    "id": 0,
+    "title": "Selamlar ilk post",
+    "dateTime": "2022-05-26T11:35:00",
+    "author": "Admin",
+    "content": "Selam dostlar bu WhyMad'in ilk postu.'"
+  },
+  {
+    "id": 1,
+    "title": "Dolar Kuru 26 Mayıs",
+    "dateTime": "2022-05-26T12:35:00",
+    "author": "comar3434",
+    "content": "Ben zaten 50 liralık alıyorum diyip geçiştirdiğim başlıktır."
+  }
+]
